@@ -6,8 +6,6 @@ void merge(int arr1[], int arr2[], int n, int m) {
     int left = n - 1;
     int right = 0;
 
-    //Swap the elements until arr1[left] is
-    // smaller than arr2[right]:
     while (left >= 0 && right < m) {
         if (arr1[left] > arr2[right]) {
             swap(arr1[left], arr2[right]);
